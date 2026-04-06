@@ -1,0 +1,96 @@
+#root{
+  background: black;
+  width: 100% !important;
+}
+#category{
+  background: rgba(6, 107, 201, 0.31);
+  box-sizing: border-box !important;
+  border-radius: 5px;
+  color: rgb(6, 106, 201) !important;
+}
+#search-btn{
+  right: 0% !important;
+  top:0% !important;
+  color: rgb(245, 245, 245) !important;
+}
+#search{
+  
+  outline-width: .5px !important;
+  border: 1px solid rgba(255, 255, 255, 0.395) !important;
+padding-left: 10px !important;
+
+}
+#search::placeholder{
+color: rgb(197, 198, 204) !important;
+}
+#id-menu-img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.nav-link{
+  color: rgb(197, 198, 204) !important;
+}
+#hero-section{
+  height: 600px !important;
+}
+.form-color{
+  color: rgba(197, 198, 204, 0.405) !important;
+
+}
+.form-input{
+  background: #232323 !important;
+  border: none !important;
+  color:rgb(197, 198, 204) !important ;
+  padding-left: 30px !important;
+}
+.form-input::placeholder{
+  color: rgba(197, 198, 204, 0.405) !important;
+  
+}
+.from-icon{
+  top:10% !important;
+  color: rgba(197, 198, 204, 0.405) !important;
+  left:2%;
+  
+}
+.side-link{
+  height: 50px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-link .btn{
+  color: rgb(197, 198, 204) !important;
+  transition: all .5s;
+  max-height: 30px;
+}
+
+.side-link .active {
+  color: rgb(0, 0, 0) !important;
+  background-color: #ffdd00 !important;
+  border: none !important;
+  border-radius: 5px;
+}
+.side-link .btn:hover{
+  background-color: #ffdd00 !important;
+  color: rgb(0, 0, 0) !important;
+
+}
+.rating {
+  unicode-bidi: bidi-override;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 20px;
+  cursor: pointer;
+  color: gold;
+
+}
+.form{
+  transition: all .5s;
+}
