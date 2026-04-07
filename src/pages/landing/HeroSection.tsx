@@ -3,9 +3,9 @@ import { FaPlay } from "react-icons/fa";
 const HerSection = () => {
   return (
     <>
-      <div className="container bg-transparent" id='hero-section'>
-        <div className="row  bg-transparent " style={{height:"100%"}}>
-            <div className="col-sm-6 bg-transparent">
+      <div className="container bg-transparent  position-relative" id='hero-section'>
+        <div className="row  bg-transparent h-100 ">
+            <div className="col-sm-12 bg-transparent col-md-6 position-relative" >
                 <div className='bg-transparent d-flex justify-content-start align-items-center flex-wrap mt-5'>
                     <h1 className='text-light mb-4 fw-bold' style={{width:"100%",fontSize:"50px",marginTop:"120px"}}>Limitless learning at your fingertips</h1>
                 <p className='mb-4 fs-5' style={{width:"100%",color:"rgb(197, 198, 204)"}}>Online learning and teaching marketplace with 5K+ courses & 10M students. Taught by experts to help you acquire new skills.</p>
@@ -25,7 +25,7 @@ const HerSection = () => {
                         Watch video</button>
                     </div>
             </div>
-            <div className="col-sm-6  bg-transparent position-relative">
+            <div className="col-sm-12 bg-transparent col-md-6 position-relative">
                 <img src="https://themes.stackbros.in/eduport_ng/assets/images/element/07.png" alt="" className='img-fluid'/>
                 <div style={{height:"70px",width:"70px" ,borderRadius:"8px",boxSizing:"border-box", top:"25%" ,left
                     :"-5%"

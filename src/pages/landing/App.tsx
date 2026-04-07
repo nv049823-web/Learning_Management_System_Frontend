@@ -18,7 +18,7 @@ import UserPurchasePlans from '../user/UserPurchasePlans';
 import UserPurchesCourse from '../user/UserPurchesCourse';
 import AdminUpdateProfile from '../admin/AdminUpdateProfile';
 import UserUpdateProfile from '../user/UserUpdateProfile';
-import UserDetails from '../../component/admin/userDetails';
+import UserDetails from '../../component/admin/UserDetails';
 import UserPurchasedPlans from '../user/UserPurchasedPlans';
 import UserPurchasedCourses from '../user/UserPurchasedCourses';
 
@@ -51,7 +51,6 @@ const App = () => {
       <Route path='/user-update' element={<><UserUpdateProfile/></>}/> 
       <Route path='/user-purchased-plans' element={<><UserPurchasedPlans/></>}/> 
       <Route path='/user-purchased-courses' element={<><UserPurchasedCourses/></>}/> 
-      
      </Routes>
 
      </BrowserRouter>

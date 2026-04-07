@@ -1,5 +1,4 @@
 import StatsCard from "../../component/user/Stats";
-import UserUpdateProfile from "../../component/user/UserUpdateProfile";
 
 const Dashboard = () => {
   return (
@@ -78,7 +77,6 @@ const Dashboard = () => {
 
         </main>
       </div>
-    <UserUpdateProfile/>
     </div>
     </>
   );

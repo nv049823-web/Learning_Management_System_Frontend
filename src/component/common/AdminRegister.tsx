@@ -9,7 +9,7 @@ const AdminRegister = () => {
         <div className="row" style={{height:"100%"}}>
             <div className="col-sm-6" style={{background:"rgba(6, 107, 201, 0.31)"}}>
                 <div className='container position-relative  d-flex justify-content-center align-items-center flex-wrap ' style={{height:"100%",width:"80%"}}>
-                    <img src="registrationpng.jpg" alt="" className='img-fliud mt-5' style={{height:"90%",width:"100%"}}/>
+                    <img src="download.png" alt="" className='img-fliud mt-5' style={{height:"70%",width:"100%"}}/>
                     <div className='container position-absolute  d-flex justify-content-between align-items-center flex-wrap flex-column ' style={{height:"100%",width:"100%"}}>
                        <div> <h1 className='text-light text-center mb-2'>Welcome to our largest community</h1>
                         <p  className='text-light text-center mb-2'>Let's learn something new today!</p></div>

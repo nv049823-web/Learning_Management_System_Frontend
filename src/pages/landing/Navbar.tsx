@@ -27,29 +27,29 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto  mb-lg-0">
           <li className="nav-item px-4">
-           <Link className="nav-link active  fw-bold " aria-current="page" to="/" >
+           <Link className="nav-link active  " aria-current="page" to="/" >
               Home
             </Link>
           </li>
           <li className="nav-item px-4">
-           <Link className="nav-link  fw-bold" to="/login">
+           <Link className="nav-link " to="/login">
               Login
             </Link>
           </li>
          
           <li className="nav-item px-4">
-           <Link className="nav-link  fw-bold" to="/register">
+           <Link className="nav-link " to="/register">
              Register
             </Link>
           </li>
          
           <li className="nav-item px-4">
-           <Link className="nav-link  fw-bold" to="/admin-login">
+           <Link className="nav-link " to="/admin-login">
               Admin login
             </Link>
           </li>
           <li className="nav-item px-4">
-           <Link className="nav-link  fw-bold" to="/admin-register">
+           <Link className="nav-link " to="/admin-register">
               Admin register
             </Link>
           </li>

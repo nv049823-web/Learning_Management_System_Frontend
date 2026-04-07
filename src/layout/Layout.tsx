@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Sidebar from './Sidebar';
 import  withAuth from '../HOC/withAuth';
+import Footer from '../pages/landing/Footer';
 // import ".././css/tailwind.css"
 
 const Layout = ({children}: {children: any}) => {
@@ -18,6 +19,7 @@ const Layout = ({children}: {children: any}) => {
             </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

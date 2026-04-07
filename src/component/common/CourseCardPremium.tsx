@@ -2,7 +2,7 @@ import { FaRegClock, FaLayerGroup } from "react-icons/fa6";
 
 const CourseCardPremium = ({ course }: { course: any; }) => {
   return (
-    <div className="card bg-dark border-0 shadow-lg rounded-4 overflow-hidden" style={{ width: "19rem" }}>
+    <div className="card bg-dark border-0 shadow-lg rounded-4 overflow-hidden" style={{ width: "100%" }}>
       {/* Thumbnail Section with Overlay Badge */}
       <div className="position-relative">
         <img 

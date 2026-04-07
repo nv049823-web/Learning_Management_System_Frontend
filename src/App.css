@@ -32,7 +32,7 @@ color: rgb(197, 198, 204) !important;
   color: rgb(197, 198, 204) !important;
 }
 #hero-section{
-  height: 600px !important;
+  height: auto !important;
 }
 .form-color{
   color: rgba(197, 198, 204, 0.405) !important;
@@ -93,4 +93,14 @@ color: rgb(197, 198, 204) !important;
 }
 .form{
   transition: all .5s;
+}
+.carousel-indicators{
+  position: relative !important;
+  margin: 0 !important;
+}
+.carousel-indicators .btn{
+  position: relative !important;
+  height: auto !important;
+  width:100px !important;
+  padding:.6rem !important;
 }
