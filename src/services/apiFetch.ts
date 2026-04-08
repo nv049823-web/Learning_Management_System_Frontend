@@ -104,18 +104,44 @@ export const updateUserProfile = async(data:any)=>{
 }
 export const getUserProfileData= async ()=>{
   const res = await axios.get(`${BASE_URL}/api/user-profile`,{headers:getAuthHeaders()})
-  return res.data
+  return res?.data
 }
 
 export const getUserProfileDetails= async (id:any)=>{
   const res = await axios.get(`${BASE_URL}/api/user-details/${id}`,{headers:getAuthHeaders()})
-  return res.data
+  return res?.data
 }
 export const getUserPurchesdPlans= async ()=>{
   const res = await axios.get(`${BASE_URL}/api/user-purchased-plans`,{headers:getAuthHeaders()})
-  return res.data
+  return res?.data
 }
 export const getUserPurchesdCourse= async ()=>{
   const res = await axios.get(`${BASE_URL}/api/user-purchased-courses`,{headers:getAuthHeaders()})
-  return res.data
+  return res?.data
+}
+export const getOTPAdmin= async (data:any)=>{
+  const res = await axios.post(`${BASE_URL}/api/admin-send-otp`,data)
+  return res?.data
+}
+
+export const getOTPUser= async (data:any)=>{
+  const res = await axios.post(`${BASE_URL}/api/user-send-otp`,data)
+  return res?.data
+}
+export const verifyOTPAdminURL= async (data:any)=>{
+  const res = await axios.post(`${BASE_URL}/api/admin-verify-otp`,data)
+  return res?.data
+}
+export const verifyOTPUserURL= async (data:any)=>{
+  const res = await axios.post(`${BASE_URL}/api/user-verify-otp`,data)
+  return res?.data
+}
+export const userSeachUrl= async (data:any)=>{
+  const res = await axios.get(`${BASE_URL}/api/user-search?q=${data}`,{headers:getAuthHeaders()})
+  return res?.data
+}
+export const adminSeachUrl= async (data:any)=>{
+  const res = await axios.get(`${BASE_URL}/api/admin-search?q=${data}`,{headers:getAuthHeaders()})
+  return res?.data
+
 }

@@ -5,12 +5,12 @@ import { MdEmail } from 'react-icons/md';
 import * as yup from "yup"
 import { adminLoginFetchUrl } from '../../services/apiFetch';
 import { localStore, localTokenStore, swalFire } from '../../utils';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const AdminLoginFrom = () => {
   const navigate = useNavigate()
 const schema = yup.object().shape({
-    email:yup.string().required("Name is Required").email().max(30),
+    email:yup.string().required("Email is Required").email().max(30),
     password:yup.string().min(2).max(20).required("Password is Required").matches(/^(?=.*[a-zA-Z])(?=.*\d)/,"Password should be contain number and letters"),
 })
 const {register,handleSubmit,reset,formState:{errors}}=useForm({resolver:yupResolver(schema)})
@@ -28,7 +28,7 @@ const {register,handleSubmit,reset,formState:{errors}}=useForm({resolver:yupReso
 
         }
       }catch(err){
-
+           console.log(err)
       }
     }
   return (
@@ -48,6 +48,7 @@ const {register,handleSubmit,reset,formState:{errors}}=useForm({resolver:yupReso
                             {...register("password")}/>
                             <span className='position-absolute from-icon'><FaLock /></span>
                         {errors?.password?.message??<p style={{color:"rgb(214, 41, 62)"}}>{errors?.password?.message}</p>}
+                          <Link to="/admin-get-otp">forget password</Link>
                         </div>
 
                         <button className='btn form-control bg-primary text-light'>Login</button>

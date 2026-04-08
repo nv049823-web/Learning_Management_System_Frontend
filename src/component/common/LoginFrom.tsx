@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md';
 import * as yup from "yup"
 import { userLoginFetchUrl, } from '../../services/apiFetch';
 import { localStore, localTokenStore, swalFire } from '../../utils';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const LoginFrom = () => {
   const navigate = useNavigate()
@@ -34,8 +34,6 @@ const {register,handleSubmit,reset,formState:{errors}}=useForm({resolver:yupReso
   return (
     <>
          <form action="" onSubmit={handleSubmit(onSubmit)}>
-                      
-
                         <label htmlFor="" className='form-color'>Email address*</label>
                         <div className='position-relative mb-1'>
                             <input type="email"  className='form-control  form-input' placeholder='Email'
@@ -51,7 +49,7 @@ const {register,handleSubmit,reset,formState:{errors}}=useForm({resolver:yupReso
                             <span className='position-absolute from-icon'><FaLock /></span>
                         {errors?.password?.message??<p style={{color:"rgb(214, 41, 62)"}}>{errors?.password?.message}</p>}
                         </div>
-
+                        <Link to="/user-get-otp">forget password</Link>
                         <button className='btn form-control bg-primary text-light'>Login</button>
                     </form>
     </>

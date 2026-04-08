@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Login from '../../component/common/Login';
-import Navbar from './Navbar';
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.js"
 import "../../App.css"
@@ -21,12 +20,15 @@ import UserUpdateProfile from '../user/UserUpdateProfile';
 import UserDetails from '../../component/admin/UserDetails';
 import UserPurchasedPlans from '../user/UserPurchasedPlans';
 import UserPurchasedCourses from '../user/UserPurchasedCourses';
+import AdminForgetPassword from '../../component/admin/AdminForgetPassword';
+import UserForgetPassword from '../../component/user/UserForgetPassword';
+import VerifyOTPAdmin from '../../component/admin/VerifyOTPAdmin';
+import VerifyOTPUser from '../../component/user/VerifyOTPUser';
 
 const App = () => {
   return (
     <>
      <BrowserRouter>
-     <Navbar/>
      <Routes>
       <Route path='/' element={<><Home/></>}/>
       <Route path='/login' element={<><Login/></>}/>
@@ -42,7 +44,9 @@ const App = () => {
       <Route path='/all-user' element={<><AllUsers/></>}/>
       <Route path='/uadate-admin-profile' element={<><AdminUpdateProfile/></>}/>
       <Route path='/user-profile-details/:id' element={<><UserDetails/></>}/>
-
+      <Route path='/admin-get-otp' element={<><AdminForgetPassword/></>}/>
+      <Route path='/admin-forget-password' element={<><VerifyOTPAdmin/></>}/>
+      
       
       {/* User routes */}
       <Route path='/dashboard/:id' element={<><LayoutChildren/></>}/> 
@@ -51,7 +55,11 @@ const App = () => {
       <Route path='/user-update' element={<><UserUpdateProfile/></>}/> 
       <Route path='/user-purchased-plans' element={<><UserPurchasedPlans/></>}/> 
       <Route path='/user-purchased-courses' element={<><UserPurchasedCourses/></>}/> 
+      <Route path='/user-get-otp' element={<><UserForgetPassword/></>}/>
+      <Route path='/user-forget-password' element={<><VerifyOTPUser/></>}/>
+
      </Routes>
+
 
      </BrowserRouter>
     </>

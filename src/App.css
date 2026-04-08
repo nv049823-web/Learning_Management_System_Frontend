@@ -9,9 +9,10 @@
   color: rgb(6, 106, 201) !important;
 }
 #search-btn{
-  right: 0% !important;
-  top:0% !important;
+  right: 6% !important;
+  top:20% !important;
   color: rgb(245, 245, 245) !important;
+  border: none !important;
 }
 #search{
   
